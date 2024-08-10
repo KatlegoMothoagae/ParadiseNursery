@@ -1,0 +1,105 @@
+#shopping-header{
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    /*border: 1px solid #ccc;*/
+
+    background-color: #298e46;
+}
+#shopping-header h2{
+    /*border: 1px solid red;*/
+}
+
+#shopping-header #cart{
+    /*border: 1px solid red;*/
+    padding: 0;
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    /*border: 1px solid blue;*/
+    margin: 0;
+    padding: 0;
+}
+#logo-header h2,#logo-header p{
+    margin: 0;
+    padding: 0;
+    /*border: 2px solid red;*/
+}
+#shopping-main{
+    background-color: whitesmoke;
+}
+.plant-category{
+    display: inline-block;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    text-align: center;
+    align-content: center;
+
+}
+#logo-img{
+    width: 50px;
+}
+.plant img{
+    max-width: 200px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.plants{
+    display: flex;
+    flex-wrap: wrap;
+    /*border: 1px solid blue;*/
+    /*background-color: wheat;*/
+    /*width: 400px;*/
+}
+
+.air-purifying-plants{
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#shopping-main hr{
+    text-align: center;
+    margin: 0;
+    width: 20px;
+    /*border-bottom-width: 10px;*/
+    /*border-top: 1px solid black ;*/
+    /*border-bottom: 1px solid black;*/
+}
+.plant{
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px black;
+    /*flex-direction: column;*/
+    /*border: 1px solid red;*/
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 400px;
+    /*height: 400px;*/
+}
+
+.plant h1{
+    /*color: red;*/
+    /*border: 1px solid red;*/
+    margin: 0;
+    padding: 0;
+}
+
+.plant button{
+    color: white;
+}
+.plant button:hover{
+    cursor: pointer;
+    background-color: lawngreen;
+    transition: ease 0.9s;
+}
+.plant button:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+}
