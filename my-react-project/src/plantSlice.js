@@ -51,8 +51,9 @@ export const plantSlice =  createSlice( {
                }
             },
         setItems: (state, action) => {
-            const item = state[action.payload.index];
-
+            const item = state[action.payload.plantIndex];
+            // console.log("ITEM")
+            // console.log(item.name);
             if (item) {
                 item.quantity = Number(action.payload.value.valueOf());
             }

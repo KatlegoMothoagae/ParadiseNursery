@@ -22,18 +22,30 @@ function Cart() {
 
         doStuff();
     }, [cart])
+
     const resetCart = (index) =>{
         dispatch(reset(index));
         getTotalCart()
     }
-    const setCartItems = (index, value) => {
+    const getTotalNum = () => {
+        let total = 0;
+        for (let i =0; i <= plantItems.length - 1; i++) {
+            total += plantItems[i].quantity.valueOf();
+        }
 
-        dispatch(setItems({index, value}));
+        console.log(total);
+        return total;
+    }
+    const setCartItems = (index, value) => {
+        //
+        let plantIndex = plantItems.findIndex(item => item.name === cart[index].name);
+        dispatch(setItems({plantIndex, value}));
 
         setCart( ()=>cart = plantItems.filter(item => item.quantity > 0))
-        console.log(cart)
-        console.log("NEW TOTAL: "+getTotalCart());
+        // console.log(cart)
+        // console.log("NEW TOTAL: "+getTotalCart());
         setTotal(getTotalCart())
+        console.log(2)
     }
     const getTotalCart = () => {
         let change = 0;
@@ -72,12 +84,12 @@ function Cart() {
         setCart(cart = newCart);
         console.log("NEW TOTAL: "+getTotalCart());
         setTotal(getTotalCart())
-        // console.log("CART: " + cart);
+
     }
     return(
         <>
             <header id="shopping-header">
-                <Link to="/shopping">
+                <Link to="/">
                     <div id="logo">
                         <img id="logo-img" alt="plant logo" src={logo}/>
                         <div id="logo-header">
@@ -86,10 +98,12 @@ function Cart() {
                         </div>
                     </div>
                 </Link>
+                <Link to="/shopping">
+                    <h2>Plants</h2>
+                </Link>
 
-                <h2>Plants</h2>
                 <Link to={"/cart"}>
-                    {/*{getTotal()}*/}
+                    {getTotalNum()}
                 </Link>
                 {/*<p></p>*/}
                 {/*<img id="cart" alt="cart" src="my-react-project/src/assets/plant-svgrepo-com.svg"/>*/}
@@ -116,7 +130,10 @@ function Cart() {
                     }
                 </div>
 
-                <button className="cart-btn">Continue Shopping</button>
+                <button className="cart-btn">
+                    <Link to="/shopping"> Continue Shopping</Link>
+
+                </button>
                 <button className="cart-btn">Checkout</button>
             </main>
         </>

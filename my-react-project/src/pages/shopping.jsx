@@ -34,13 +34,16 @@ function ShoppingPage() {
     return (
         <>
             <header id="shopping-header">
-                <div id="logo">
-                    <img id="logo-img" alt="plant logo" src={logo}/>
-                    <div id="logo-header">
+                <Link to="/">
+                    <div id="logo">
+                        <img id="logo-img" alt="plant logo" src={logo}/>
+                        <div id="logo-header">
                             <h2>Paradise Nursery</h2>
                             <p>Where Green Meets Serenity</p>
                         </div>
                     </div>
+                </Link>
+
                     <h2>Plants</h2>
                     <Link to={"/cart"}>
                         {getTotal()}
