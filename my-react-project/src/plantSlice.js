@@ -27,7 +27,47 @@ export const plantSlice =  createSlice( {
             summary: "Does something cool!!",
             type: "air purifying plant",
         },
+        {
+            img: 'src/assets/Chinese-Evergreen.jpg',
+            name: "Chinese Evergreen",
+            cost: 49,
+            quantity: 0,
+            summary: "Does something cool!!",
+            type: "low-light",
+        },
+        {
+            img: 'src/assets/Dracaena.jpg',
+            name: "Dracaena",
+            cost: 49,
+            quantity: 0,
+            summary: "Does something cool!!",
+            type: "low-light",
+        },
+        {
+            img: 'src/assets/Spider-Plant.jpg',
+            name: "Spider Plant",
+            cost: 49,
+            quantity: 0,
+            summary: "Does something cool!!",
+            type: "low-light",
+        },
 
+        {
+            img: 'src/assets/Haworthia.jpg',
+            name: "Haworthia",
+            cost: 49,
+            quantity: 0,
+            summary: "Does something cool!!",
+            type:  "succulents",
+        },
+        {
+            img: 'src/assets/jade-plant.jpg',
+            name: "Jade Plant",
+            cost: 49,
+            quantity: 0,
+            summary: "Does something cool!!",
+            type: "succulents",
+        },
     ],
     reducers : {
            increment: (state, action) => {
@@ -39,9 +79,7 @@ export const plantSlice =  createSlice( {
             decrement: (state, action) => {
                const item = state[action.payload];
                if(item && item.quantity > 0) {
-                   console.log("YEEEEEEEEEEEEEESSSS"+item.quantity);
                    item.quantity = item.quantity - 1;
-                   console.log("YEEEEEEEEEEEEEESSSS"+item.quantity);
                }
             },
             reset: (state, action) => {
@@ -52,28 +90,11 @@ export const plantSlice =  createSlice( {
             },
         setItems: (state, action) => {
             const item = state[action.payload.plantIndex];
-            // console.log("ITEM")
-            // console.log(item.name);
             if (item) {
                 item.quantity = Number(action.payload.value.valueOf());
             }
         },
-            setItems_old: (state, action) => {
-               // const  {index, amount} = action.payload
-                const item = state[action.payload];
-               // const item = state[action.payload];
-                console.log("SET ITEM!!!!!!!!!!!!")
-                console.log(`state ${state}`);
-                console.log(`payload ${action.payload}`);
-                console.log(`amount ${amount}`);
-                // const item = state[index];
-               console.log(item)
-               if(item) {
-                   item.quantity = amount;
-                   console.log("NEW QUANTITY BABAAAY")
-                   console.log(item.quantity);
-               }
-            }
+
     },
 });
 

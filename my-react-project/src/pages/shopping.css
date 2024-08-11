@@ -32,10 +32,10 @@
 #shopping-main{
     background-color: whitesmoke;
 }
-.plant-category{
+.section{
     display: inline-block;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
+    /*border-bottom: 2px solid black;*/
+    /*border-top: 2px solid black;*/
     text-align: center;
     align-content: center;
 
@@ -43,13 +43,13 @@
 #logo-img{
     width: 50px;
 }
-.plant img{
+.plant-card img{
     max-width: 200px;
     height: 300px;
     margin-top: 20px;
 }
 
-.plants{
+.plant-cards{
     display: flex;
     flex-wrap: wrap;
     /*border: 1px solid blue;*/
@@ -57,21 +57,24 @@
     /*width: 400px;*/
 }
 
-.air-purifying-plants{
+.plant-card{
 
     text-align: center;
     justify-content: center;
     align-items: center;
 }
-#shopping-main hr{
+.divider{
+    /*border-top: 2px solid #298e46;*/
+    width: 100vw;
     text-align: center;
     margin: 0;
-    width: 20px;
+    /*width: 20px;*/
+    /*color: red;*/
     /*border-bottom-width: 10px;*/
     /*border-top: 1px solid black ;*/
     /*border-bottom: 1px solid black;*/
 }
-.plant{
+.plant-card{
     text-align: center;
     background-color: white;
     box-shadow: 2px 2px 10px black;
@@ -84,22 +87,22 @@
     /*height: 400px;*/
 }
 
-.plant h1{
+.plant-card h1{
     /*color: red;*/
     /*border: 1px solid red;*/
     margin: 0;
     padding: 0;
 }
 
-.plant button{
+.plant-cards button{
     color: white;
 }
-.plant button:hover{
+.plant-cards button:hover{
     cursor: pointer;
     background-color: lawngreen;
     transition: ease 0.9s;
 }
-.plant button:disabled{
+.plant-cards button:disabled{
     background-color: grey;
     cursor: not-allowed;
 }

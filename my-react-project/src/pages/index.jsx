@@ -3,7 +3,9 @@ import {Link} from "react-router-dom";
 import './index.css'
 function LandingPage() {
     return(
+
         <div id='landingPage'>
+            <title>Paradise Nursery</title>
             <div id="main-container">
                 <div id="title">
                     <h1>Welcome To Paradise Nursery</h1>
