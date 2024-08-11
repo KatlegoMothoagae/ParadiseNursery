@@ -149,7 +149,7 @@ function Cart() {
                 <button className="cart-btn">
                     <Link to="/shopping"> Continue Shopping</Link>
                 </button>
-                <button className="cart-btn">Checkout</button>
+                <button onClick={() => alert("coming soon")} className="cart-btn">Checkout</button>
             </main>
         </>
     )
