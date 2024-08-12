@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import lotus from "assets/lotus.jpg";
+import lotus from "./assets/lotus.jpg";
 export const plantSlice =  createSlice( {
     name: "plants",
     initialState: [
         {
-            img: {lotus},
+            img: lotus,
             name: lotus,
             cost: 18,
             quantity: 0,
