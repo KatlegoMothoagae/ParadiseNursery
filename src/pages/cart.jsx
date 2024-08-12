@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import logo from "../assets/plant-svgrepo-com.svg";
+import logo from "../../public/assets/plant-svgrepo-com.svg";
 import {Link} from "react-router-dom";
 import './cart.css'
 

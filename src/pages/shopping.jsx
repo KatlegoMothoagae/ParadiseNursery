@@ -3,7 +3,7 @@ import './shopping.css'
 import {useSelector, useDispatch} from "react-redux"
 import {increment, decrement} from "../plantSlice.js";
 // import lotus from  '../assets/lotus.jpg'
-import logo from '../assets/plant-svgrepo-com.svg'
+import logo from '../../public/assets/plant-svgrepo-com.svg'
 import {Link} from "react-router-dom";
 function ShoppingPage() {
     const plantItems = useSelector((state) => state.plant)
