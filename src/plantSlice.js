@@ -12,7 +12,7 @@ export const plantSlice =  createSlice( {
             type: "air purifying plant",
         },
         {
-            img: 'src/assets/peace-lily.png',
+            img: 'assets/peace-lily.png',
             name: "Peace lily",
             cost: 28,
             quantity: 0,
