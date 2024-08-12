@@ -1,5 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 import lotus from "../public/assets/lotus.jpg";
+import lily from "../public/assets/lily.jpg";
+import aloe from "../public/assets/aloe-vera.jpg";
+import evergreen from "../public/assets/Chinese-Evergreen.jpg";
+import dracaena from "../public/assets/Dracaena.jpg";
+import spider from "../public/assets/Spider-Plant.jpg";
+import haworthia from "../public/assets/Haworthia.jpg";
+import jade from  "../public/assets/jade-plant.jpg";
+
 export const plantSlice =  createSlice( {
     name: "plants",
     initialState: [
@@ -12,7 +20,7 @@ export const plantSlice =  createSlice( {
             type: "air purifying plant",
         },
         {
-            img: 'assets/peace-lily.png',
+            img: lily ,
             name: "Peace lily",
             cost: 28,
             quantity: 0,
@@ -20,7 +28,7 @@ export const plantSlice =  createSlice( {
             type: "air purifying plant",
         },
         {
-            img: 'src/assets/aloe-vera.jpg',
+            img: aloe,
             name: "Aloe Vera ",
             cost: 28,
             quantity: 0,
@@ -28,7 +36,7 @@ export const plantSlice =  createSlice( {
             type: "air purifying plant",
         },
         {
-            img: 'src/assets/Chinese-Evergreen.jpg',
+            img: evergreen,
             name: "Chinese Evergreen",
             cost: 49,
             quantity: 0,
@@ -36,7 +44,7 @@ export const plantSlice =  createSlice( {
             type: "low-light",
         },
         {
-            img: 'src/assets/Dracaena.jpg',
+            img: dracaena,
             name: "Dracaena",
             cost: 49,
             quantity: 0,
@@ -44,16 +52,15 @@ export const plantSlice =  createSlice( {
             type: "low-light",
         },
         {
-            img: 'src/assets/Spider-Plant.jpg',
+            img: spider,
             name: "Spider Plant",
             cost: 49,
             quantity: 0,
             summary: "Does something cool!!",
             type: "low-light",
         },
-
         {
-            img: 'src/assets/Haworthia.jpg',
+            img: haworthia,
             name: "Haworthia",
             cost: 49,
             quantity: 0,
@@ -61,7 +68,7 @@ export const plantSlice =  createSlice( {
             type:  "succulents",
         },
         {
-            img: 'src/assets/jade-plant.jpg',
+            img: jade,
             name: "Jade Plant",
             cost: 49,
             quantity: 0,
