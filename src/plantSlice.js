@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import lotus from "../public/assets/lotus.jpg";
-import lily from "../public/assets/lily.jpg";
+import lily from "../public/assets/peace-lily.png";
 import aloe from "../public/assets/aloe-vera.jpg";
 import evergreen from "../public/assets/Chinese-Evergreen.jpg";
 import dracaena from "../public/assets/Dracaena.jpg";
