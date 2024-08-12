@@ -13,10 +13,10 @@ export const plantSlice =  createSlice( {
     initialState: [
         {
             img: lotus,
-            name: lotus,
+            name: "Lotus",
             cost: 18,
             quantity: 0,
-            summary: "yada yada yada",
+            summary: "Graceful and serene, perfect for indoor tranquility.",
             type: "air purifying plant",
         },
         {
@@ -24,7 +24,7 @@ export const plantSlice =  createSlice( {
             name: "Peace lily",
             cost: 28,
             quantity: 0,
-            summary: "yida yada yada",
+            summary: "Air-purifying beauty that thrives in low light",
             type: "air purifying plant",
         },
         {
@@ -32,7 +32,7 @@ export const plantSlice =  createSlice( {
             name: "Aloe Vera ",
             cost: 28,
             quantity: 0,
-            summary: "Does something cool!!",
+            summary: "Healing and decorative, a natural skin soother.",
             type: "air purifying plant",
         },
         {
@@ -40,7 +40,7 @@ export const plantSlice =  createSlice( {
             name: "Chinese Evergreen",
             cost: 49,
             quantity: 0,
-            summary: "Does something cool!!",
+            summary: "Low-light champion with vibrant leaves.",
             type: "low-light",
         },
         {
@@ -48,7 +48,7 @@ export const plantSlice =  createSlice( {
             name: "Dracaena",
             cost: 49,
             quantity: 0,
-            summary: "Does something cool!!",
+            summary: "Elegant and hardy, ideal for shaded spaces.",
             type: "low-light",
         },
         {
@@ -56,7 +56,7 @@ export const plantSlice =  createSlice( {
             name: "Spider Plant",
             cost: 49,
             quantity: 0,
-            summary: "Does something cool!!",
+            summary: "Resilient and easy-care, great for beginners.",
             type: "low-light",
         },
         {
@@ -64,7 +64,7 @@ export const plantSlice =  createSlice( {
             name: "Haworthia",
             cost: 49,
             quantity: 0,
-            summary: "Does something cool!!",
+            summary: "Compact succulent, perfect for sunny spots.",
             type:  "succulents",
         },
         {
@@ -72,7 +72,7 @@ export const plantSlice =  createSlice( {
             name: "Jade Plant",
             cost: 49,
             quantity: 0,
-            summary: "Does something cool!!",
+            summary: "Sturdy and symbolic, brings good fortune.",
             type: "succulents",
         },
     ],
